@@ -46,7 +46,7 @@ function App() {
           />
         </div>
         <form
-          className="pt-[8rem]"
+          className="lg:pt-[8rem] pt-[5rem]"
           onSubmit={handleSubmit((data) => {
             handleSubmitFunc(data);
           })}
@@ -93,7 +93,7 @@ function App() {
                     required: "Cardholder number cannot be empty",
                     minLength: {
                       value: 16,
-                      message: "Must no be more than or less than 16",
+                      message: "Not complete",
                     },
                     pattern: {
                       value: /[0-9]/,
@@ -213,7 +213,7 @@ function App() {
   };
 
   return (
-    <>
+    <main className="">
       <div className="flex lg:flex-row flex-col justify-center lg:justify-start lg:items-start items-center lg:space-y-10 lg:space-x-[450px] relative ">
         <div>
           <Hero classes="h-dvh" />
@@ -224,7 +224,7 @@ function App() {
         </div>
         {/* forms */}
       </div>
-    </>
+    </main>
   );
 }
 

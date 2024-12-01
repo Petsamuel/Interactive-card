@@ -5,7 +5,7 @@ import bgCardBack from "../assets/bg-card-back.png";
 const FrontCard = ({ holdername, number, month, year }: any) => {
   const AddSpaces = () => {
     let spacedString = "";
-   
+
     try {
       for (let i = 0; i < number.length; i += 4) {
         if (i > 0) {
@@ -20,8 +20,8 @@ const FrontCard = ({ holdername, number, month, year }: any) => {
   };
   return (
     <div className=" text-white w-full relative lg:ml-[-10rem] ml-[-2.8rem] lg:mt-0 md:mt-[-7.6rem] mt-[-7rem] z-20">
-      <img src={bgCardFront} alt="front" className=" h-auto relative" />
-      <div className="absolute top-0 flex-col flex h-full w-full p-[2em] gap-y-[3.5rem]">
+      <img src={bgCardFront} alt="front" className=" relative" />
+      <div className="absolute top-0 flex-col flex h-full w-full lg:p-[2rem] p-[1rem] gap-y-[3.5rem]">
         {/* val */}
         {/* circle */}
         <div className="flex gap-3 items-center justify-items-start ">
@@ -51,7 +51,7 @@ const FrontCard = ({ holdername, number, month, year }: any) => {
 const BackCard = ({ cvc }: any) => {
   return (
     <span className="relative">
-      <img src={bgCardBack} alt="back" className="  h-auto relative" />
+      <img src={bgCardBack} alt="back" className=" relative" />
       <div className="absolute top-0 flex-col flex h-full w-full p-[2em] ">
         <div className="absolute  lg:top-[6.5rem] top-[5.5rem] end-12">
           {cvc ? cvc : "000"}
@@ -63,7 +63,7 @@ const BackCard = ({ cvc }: any) => {
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const Card = ({ holdername, number, month, year, cvc }: any) => {
   return (
-    <div className="mt-8 relative flex lg:flex-col flex-col-reverse gap-8 space-grotesk mx-8 lg:w-[30dvw] ">
+    <div className="lg:mt-8 mt-18 relative flex lg:flex-col flex-col-reverse gap-8 space-grotesk mx-8  ">
       <FrontCard
         holdername={holdername}
         number={number}

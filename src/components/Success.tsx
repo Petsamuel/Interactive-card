@@ -1,7 +1,7 @@
 import complete from "../assets/icon-complete.svg";
 export const Success = () => {
   return (
-    <div>
+    <div className="flex flex-col gap-3 w-[400px]  z-50">
       <div className="text-center flex flex-col gap-6 justify-center items-center space-grotesk ">
         <img src={complete} alt="complete" className="" />
 
