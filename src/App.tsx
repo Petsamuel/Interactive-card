@@ -60,6 +60,7 @@ function App() {
                 <input
                   maxLength={24}
                   type="text"
+                  id="cardholder"
                   placeholder="e.g Peter Samuel"
                   className={` ${
                     errors.cardholder &&
@@ -83,7 +84,7 @@ function App() {
                 </label>
                 <input
                   type="text"
-                
+                  id="number"
                   placeholder="e.g 1234 5678 9123 0000"
                   className={`py-[0.5rem] rounded-lg px-4 border-2 border-[--LightGrayishViolet] outline-[--VeryDarkViolet] ${
                     errors.number && "border-2 border-[--RedError]"
@@ -121,6 +122,7 @@ function App() {
 
                     <input
                       type="text"
+                      id="month"
                       placeholder="MM"
                       className={`py-[0.5rem] rounded-md px-2 w-[5rem] border-2 border-[--LightGrayishViolet] ${
                         errors.month && "border-2 border-[--RedError]"
@@ -150,6 +152,7 @@ function App() {
                     </label>
                     <input
                       type="string"
+                      id="year"
                       className={`py-[0.5rem] rounded-lg px-2 w-[5rem] border-2 border-[--LightGrayishViolet] ${
                         errors.year && "border-2 border-[--RedError]"
                       }`}
@@ -176,6 +179,7 @@ function App() {
                   <input
                     maxLength={3}
                     type="text"
+                    id="cvc"
                     className={`rounded-lg px-4 py-[0.5rem] border-2 border-[--LightGrayishViolet] ${
                       errors.cvc && "border-2 border-[--RedError]"
                     }`}
