@@ -108,7 +108,7 @@ function App() {
                   </span>
                 )}
               </section>
-              <section className="flex  space-x-4 ">
+              <section className="flex gap-3">
                 <div className="flex gap-2">
                   <div>
                     <label
@@ -166,7 +166,7 @@ function App() {
                   </div>
                 </div>
 
-                <div>
+                <div className="w-fit">
                   <label
                     htmlFor="cvc"
                     className="flex flex-col text-sm uppercase"
