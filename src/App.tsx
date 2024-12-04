@@ -54,7 +54,7 @@ function App() {
           {!isSubmitSuccessful ? (
             <div className="flex flex-col gap-3 lg:w-[400px] z-50 ">
               <section className="flex flex-col uppercase gap-y-1 my-2">
-                <label htmlFor="" className="space-grotesk text-sm">
+                <label htmlFor="cardholder" className="space-grotesk text-sm">
                   cardholder name
                 </label>
                 <input
@@ -78,7 +78,7 @@ function App() {
                 )}
                 {/* card number */}
 
-                <label htmlFor="" className="text-sm space-grotesk pt-4">
+                <label htmlFor="number" className="text-sm space-grotesk pt-4">
                   card number
                 </label>
                 <input
@@ -112,7 +112,7 @@ function App() {
                 <div className="flex gap-2">
                   <div>
                     <label
-                      htmlFor=""
+                      htmlFor="month"
                       className="flex flex-col text-sm uppercase"
                     >
                       {" "}
@@ -143,7 +143,7 @@ function App() {
                   </div>
                   <div>
                     <label
-                      htmlFor=""
+                      htmlFor="year"
                       className="flex flex-col text-sm uppercase "
                     >
                       (MM/YY)
@@ -167,7 +167,10 @@ function App() {
                 </div>
 
                 <div>
-                  <label htmlFor="" className="flex flex-col text-sm uppercase">
+                  <label
+                    htmlFor="cvc"
+                    className="flex flex-col text-sm uppercase"
+                  >
                     cvc
                   </label>
                   <input
@@ -219,7 +222,7 @@ function App() {
           <Hero classes="h-dvh" />
         </div>
 
-        <div className="mx-8">
+        <div className="mx-8 lg:pt-8 ">
           <FormField />{" "}
         </div>
         {/* forms */}

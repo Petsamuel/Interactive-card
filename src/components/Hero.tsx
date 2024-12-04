@@ -11,9 +11,9 @@ const Hero = ({ classes }: Classes) => {
       <img
         src={bgDeskotp}
         alt="bg"
-        className={`lg:block hidden md:block lg:w-[30dvw] ${classes}`}
+        className={`lg:block hidden  lg:w-[30dvw] ${classes}`}
       />
-      <img src={bgMobile} alt="bg" className="lg:hidden md:hidden w-dvw" />
+      <img src={bgMobile} alt="bg" className="lg:hidden  w-dvw" />
     </div>
   );
 };

@@ -5,8 +5,8 @@ export const Success = () => {
       <div className="text-center flex flex-col gap-6 justify-center items-center space-grotesk ">
         <img src={complete} alt="complete" className="" />
 
-        <p className="text-[--] text-2xl font-bold uppercase">Thank you</p>
-        <p className="text-[--] pb-7">We've have added your card details</p>
+        <h1 className="text-[--] text-2xl font-bold uppercase">Thank you</h1>
+        <h4 className="text-[--] pb-7">We've have added your card details</h4>
       </div>
     </div>
   );

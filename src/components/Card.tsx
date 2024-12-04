@@ -50,20 +50,20 @@ const FrontCard = ({ holdername, number, month, year }: any) => {
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const BackCard = ({ cvc }: any) => {
   return (
-    <span className="relative">
-      <img src={bgCardBack} alt="back" className=" relative" />
+    <div className="relative ">
+      <img src={bgCardBack} alt="back" className=" relative shadow-2xl rounded-lg " />
       <div className="absolute top-0 flex-col flex h-full w-full p-[2em] ">
         <div className="absolute  lg:top-[6.5rem] top-[5.5rem] end-12">
           {cvc ? cvc : "000"}
         </div>
       </div>
-    </span>
+    </div>
   );
 };
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const Card = ({ holdername, number, month, year, cvc }: any) => {
   return (
-    <div className="lg:mt-8 mt-18 relative flex lg:flex-col flex-col-reverse gap-8 space-grotesk mx-8  ">
+    <div className="lg:mt-[5rem] mt-[3rem] md:mt-[10rem] relative flex lg:flex-col flex-col-reverse gap-8 space-grotesk mx-8  ">
       <FrontCard
         holdername={holdername}
         number={number}
@@ -71,7 +71,7 @@ const Card = ({ holdername, number, month, year, cvc }: any) => {
         year={year}
       />
 
-      <div className="  text-white ">
+      <div className="text-white ">
         <BackCard cvc={cvc} />
       </div>
     </div>
