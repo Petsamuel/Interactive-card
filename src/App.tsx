@@ -83,7 +83,7 @@ function App() {
                 </label>
                 <input
                   type="text"
-                  id=""
+                
                   placeholder="e.g 1234 5678 9123 0000"
                   className={`py-[0.5rem] rounded-lg px-4 border-2 border-[--LightGrayishViolet] outline-[--VeryDarkViolet] ${
                     errors.number && "border-2 border-[--RedError]"
